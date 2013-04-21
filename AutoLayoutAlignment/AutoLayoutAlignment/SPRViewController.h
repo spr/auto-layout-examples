@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface SPRViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *verticalView;
+@property (weak, nonatomic) IBOutlet UIView *horizontalView;
 
+@property (weak, nonatomic) IBOutlet UILabel *verticalConstraints;
+@property (weak, nonatomic) IBOutlet UILabel *horizontalConstraints;
+
+- (IBAction)logAutolayoutTrace:(id)sender;
 @end

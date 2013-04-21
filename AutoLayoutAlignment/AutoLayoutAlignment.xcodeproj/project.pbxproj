@@ -19,6 +19,9 @@
 		B7C0B8F51724925E001CE185 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8F31724925E001CE185 /* MainStoryboard_iPhone.storyboard */; };
 		B7C0B8F81724925E001CE185 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7C0B8F61724925E001CE185 /* MainStoryboard_iPad.storyboard */; };
 		B7C0B8FB1724925E001CE185 /* SPRViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B8FA1724925E001CE185 /* SPRViewController.m */; };
+		B7C0B9061724974B001CE185 /* SPRPopoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B9051724974B001CE185 /* SPRPopoverViewController.m */; };
+		B7C0B90917249870001CE185 /* SPRConfigurationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B7C0B90817249870001CE185 /* SPRConfigurationManager.m */; };
+		B7C0B90B1724A1FE001CE185 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7C0B90A1724A1FE001CE185 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,11 @@
 		B7C0B8F71724925E001CE185 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		B7C0B8F91724925E001CE185 /* SPRViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SPRViewController.h; sourceTree = "<group>"; };
 		B7C0B8FA1724925E001CE185 /* SPRViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SPRViewController.m; sourceTree = "<group>"; };
+		B7C0B9041724974B001CE185 /* SPRPopoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRPopoverViewController.h; sourceTree = "<group>"; };
+		B7C0B9051724974B001CE185 /* SPRPopoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRPopoverViewController.m; sourceTree = "<group>"; };
+		B7C0B90717249870001CE185 /* SPRConfigurationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPRConfigurationManager.h; sourceTree = "<group>"; };
+		B7C0B90817249870001CE185 /* SPRConfigurationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPRConfigurationManager.m; sourceTree = "<group>"; };
+		B7C0B90A1724A1FE001CE185 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7C0B90B1724A1FE001CE185 /* QuartzCore.framework in Frameworks */,
 				B7C0B8DC1724925E001CE185 /* UIKit.framework in Frameworks */,
 				B7C0B8DE1724925E001CE185 /* Foundation.framework in Frameworks */,
 				B7C0B8E01724925E001CE185 /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +84,7 @@
 		B7C0B8DA1724925E001CE185 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B7C0B90A1724A1FE001CE185 /* QuartzCore.framework */,
 				B7C0B8DB1724925E001CE185 /* UIKit.framework */,
 				B7C0B8DD1724925E001CE185 /* Foundation.framework */,
 				B7C0B8DF1724925E001CE185 /* CoreGraphics.framework */,
@@ -85,6 +95,8 @@
 		B7C0B8E11724925E001CE185 /* AutoLayoutAlignment */ = {
 			isa = PBXGroup;
 			children = (
+				B7C0B9041724974B001CE185 /* SPRPopoverViewController.h */,
+				B7C0B9051724974B001CE185 /* SPRPopoverViewController.m */,
 				B7C0B8EA1724925E001CE185 /* SPRAppDelegate.h */,
 				B7C0B8EB1724925E001CE185 /* SPRAppDelegate.m */,
 				B7C0B8F31724925E001CE185 /* MainStoryboard_iPhone.storyboard */,
@@ -92,6 +104,8 @@
 				B7C0B8F91724925E001CE185 /* SPRViewController.h */,
 				B7C0B8FA1724925E001CE185 /* SPRViewController.m */,
 				B7C0B8E21724925E001CE185 /* Supporting Files */,
+				B7C0B90717249870001CE185 /* SPRConfigurationManager.h */,
+				B7C0B90817249870001CE185 /* SPRConfigurationManager.m */,
 			);
 			path = AutoLayoutAlignment;
 			sourceTree = "<group>";
@@ -181,6 +195,8 @@
 				B7C0B8E81724925E001CE185 /* main.m in Sources */,
 				B7C0B8EC1724925E001CE185 /* SPRAppDelegate.m in Sources */,
 				B7C0B8FB1724925E001CE185 /* SPRViewController.m in Sources */,
+				B7C0B9061724974B001CE185 /* SPRPopoverViewController.m in Sources */,
+				B7C0B90917249870001CE185 /* SPRConfigurationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
