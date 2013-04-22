@@ -53,6 +53,7 @@
     self.vertMid.translatesAutoresizingMaskIntoConstraints = NO;
     self.vertMid.backgroundColor = [UIColor purpleColor];
     self.vertMid.text = @"Middle View";
+    self.vertMid.font = [UIFont systemFontOfSize:26.0f];
     [self.verticalView addSubview:self.vertMid];
     
     self.vertBot = [[UILabel alloc] init];
@@ -72,6 +73,7 @@
     self.horizMid.translatesAutoresizingMaskIntoConstraints = NO;
     self.horizMid.backgroundColor = [UIColor purpleColor];
     self.horizMid.text = @"Middle View";
+    self.horizMid.font = [UIFont systemFontOfSize:26.0f];
     [self.horizontalView addSubview:self.horizMid];
     
     self.horizEnd = [[UILabel alloc] init];
