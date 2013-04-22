@@ -30,8 +30,8 @@ typedef NS_ENUM(NSInteger, kPopoverSections) {
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.verticalChoices = @[@(NSLayoutFormatAlignAllLeft), @(NSLayoutFormatAlignAllRight), @(NSLayoutFormatAlignAllLeading), @(NSLayoutFormatAlignAllTrailing), @(NSLayoutFormatAlignAllCenterY)];
-    self.horizontalChoices = @[@(NSLayoutFormatAlignAllTop), @(NSLayoutFormatAlignAllBottom), @(NSLayoutFormatAlignAllCenterX), @(NSLayoutFormatAlignAllBaseline)];
+    self.verticalChoices = @[@(NSLayoutFormatAlignAllLeft), @(NSLayoutFormatAlignAllRight), @(NSLayoutFormatAlignAllLeading), @(NSLayoutFormatAlignAllTrailing), @(NSLayoutFormatAlignAllCenterX)];
+    self.horizontalChoices = @[@(NSLayoutFormatAlignAllTop), @(NSLayoutFormatAlignAllBottom), @(NSLayoutFormatAlignAllCenterY), @(NSLayoutFormatAlignAllBaseline)];
     self.directionChoices = @[@(NSLayoutFormatDirectionLeadingToTrailing), @(NSLayoutFormatDirectionLeftToRight), @(NSLayoutFormatDirectionRightToLeft)];
     
 }

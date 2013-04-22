@@ -80,6 +80,13 @@
     self.horizEnd.text = @"Trailing View";
     [self.horizontalView addSubview:self.horizEnd];
     [self setupHorizontalView];
+    
+    // KVO
+    SPRConfigurationManager *configuration = [SPRConfigurationManager defaultManager];
+    [configuration addObserver:self forKeyPath:@"verticalAlignment" options:NSKeyValueObservingOptionNew context:nil];
+    [configuration addObserver:self forKeyPath:@"horizontalAlignment" options:NSKeyValueObservingOptionNew context:nil];
+    [configuration addObserver:self forKeyPath:@"direction" options:NSKeyValueObservingOptionNew context:nil];
+    [configuration addObserver:self forKeyPath:@"alignWithSuperview" options:NSKeyValueObservingOptionNew context:nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -194,6 +201,30 @@
     self.horizontalConstraints.text = horizontalConstraints;
     [self.horizontalView setNeedsLayout];
     [self.horizontalConstraints setNeedsDisplay];
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    if ([keyPath isEqualToString:@"verticalAlignment"]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self setupVerticalView];
+        });
+    }
+    if ([keyPath isEqualToString:@"horizontalAlignment"]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self setupHorizontalView];
+        });
+    }
+    if ([keyPath isEqualToString:@"direction"]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self setupHorizontalView];
+        });
+    }
+    if ([keyPath isEqualToString:@"alignWithSuperview"]) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self setupVerticalView];
+            [self setupHorizontalView];
+        });
+    }
 }
 
 @end
