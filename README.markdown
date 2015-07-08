@@ -2,7 +2,7 @@
 
 These are example Xcode projects that are to help demonstrate how autolayout works in iOS 6. Each project allows you to adjust settings and see how they affect the layout.
 
-[See the accompanying blog posts](http://iosdevelopment.com/blog/categories/auto-layout)
+[See the accompanying blog posts](http://iosdevelopmentjournal.com/blog/categories/auto-layout)
 
 ## AutoLayoutAlignment
 
